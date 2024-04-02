@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Scribble&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* font-family: "PT Sans Narrow", sans-serif; */
+/* font-family: "Rubik", sans-serif; */
+/* font-family: "Rubik Scribble", system-ui; - dziwne*/
+/* font-family: "Roboto", sans-serif; - zwykle*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+
+::selection {
+    color:white;
+    background: #836a55;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.container{
+    max-width: 10000px;
+    margin: auto;
+}
+
+.baner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    clear: both;
+    z-index: 100;
+    background-color: #fff;
+    width: 100.1%;
+}
+
+.baner img{
+    width: 15vmin;
+}
+
+.baner .githubIcon{
+    width: 2vmax;
+    margin-right: 4vmin;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 4vmin;
+    margin-right: 10vmin;
+    padding: 3vmin;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav a{
+    text-decoration: none;
+    color: grey;
+    background-color: #ffffff;
+    border: solid .5vmin #fff;
+    border-radius: 5vmin;
+    padding: 2vmin 3vmin;
+    transition: .75s ease;
+    font-size: 1.75vmin;
+    font-family: "Roboto", sans-serif;
+    white-space: nowrap;
+}
+
+.nav .c{
+    background-color: #af947e;
+    color: #fff;
+    transition: .2s ease-in;
+}
+
+.nav .c:hover{
+    transition: .2s ease-in;
+    background-color: rgb(143, 119, 100);
+}
+
+.nav a:hover{
+    transition: .75s ease;
+    /* border: solid .5vmin #af947e; */
+    border: solid .5vmin #4d2e00;
+}
+
+.nav .c:hover{
+    transition: .75s ease;
+    border: .5vmin solid #fff;
+}
+
+.flexMain{
+    display: flex;
+    gap: 30vmin;
+}
+
+.main{
+    margin-top: 5vmin;
+    padding: 3vmin;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 40%;
+    left: 25%;
+    transform: translate(-25%);
+    position: relative;
+}
+
+.main h1{
+    margin-top: 1vmin;
+    font-size: 3vmax;
+    font-family: "Roboto", sans-serif;
+}
+
+.main h3{
+    color: grey;
+    font-family: "Rubik", sans-serif;
+}
+
+.main .h3{
+    font-size: 1.75vmin;
+    width: 74%;
+}
+
+.main .h{
+    color: rgb(105, 105, 105);
+    margin-left: 3vmin;
+    position: absolute;
+}
+
+.main .h hr{
+    position: absolute;
+    margin-left: -2.5vmin;
+    margin-top: 1vmin;
+    width: 20%;
+}
+
+.contactBtn{
+    margin-top: 2vmin;
+    color: #fff;
+    background-color: #4d2e00;
+    padding: 2vmin 4vmin;
+    border: none;
+    border-radius: 2vmin;
+    font-size: 2vmin;
+    transition: .2s ease-in;
+}
+
+.contactBtn:hover{
+    transition: .2s ease-in;
+    background-color: #362100;
+}
+
+.svgs2{
+    margin-top: 99.95vmin;
+}
+
+.svg1{
+    rotate: 90deg;
+    width: 100vmin;
+    margin-top: -15vmin;
+    position: absolute;
+    z-index: -1;
+}
+
+.svg2{
+    rotate: -90deg;
+    width: 100vmin;
+    margin-top: -15vmin;
+    position: absolute;
+    z-index: -1;
+}
+
+.svg1M{
+    rotate: 90deg;
+    width: 100vmin;
+    margin-top: -15vmin;
+    position: absolute;
+    z-index: -2;    
+}
+
+.svg2M{
+    rotate: -90deg;
+    width: 100vmin;
+    margin-top: -15vmin;
+    position: absolute;
+    z-index: -2;
+}
+
+.svgs1 .svg1{
+    left: 0;
+    margin-left: -40vmin;
+}
+
+.svgs1 .svg2{
+    right: 0;
+    margin-right: -40vmin;
+}
+
+.svgs1 .svg1M{
+    left: 0;
+    margin-left: -40vmin;
+}
+
+.svgs1 .svg2M{
+    right: 0;
+    margin-right: -40vmin;
+}
+
+
+.svgs2 .svg1{
+    right: 0;
+    margin-right: -40vmin;
+    rotate: 90deg;
+    transform: scaleY(-1);
+}
+
+.svgs2 .svg2{
+    left: 0;
+    margin-left: -40vmin;
+    rotate: -90deg;
+    transform: scaleY(-1);
+}
+
+.svgs2 .svg1M{
+    right: 0;
+    margin-right: -40vmin;
+    rotate: 90deg;
+    transform: scaleY(-1);
+}
+
+.svgs2 .svg2M{
+    left: 0;
+    margin-left: -40vmin;  
+    rotate: -90deg;
+    transform: scaleY(-1);
+}
+
+@media screen and (max-width: 520px) {
+    .nav{
+        gap: 0;
+    }
+
+    .nav a{
+        padding: 2vmin 3vmin;
+        font-size: 2.5vmin;
+    }
+
+
+    .flexMain{
+        flex-direction: row;
+        justify-content: center;
+        text-align: center !important;
+    }
+    .main{
+        margin-top: 5vmin;
+        padding: 3vmin;
+        text-align: left;
+        width: 60%;
+        left: 0;
+        transform: translate(0%);
+    }
+
+    .main .h{
+        margin-left: 5vmin;
+    }
+    
+    .main .h hr{
+        margin-left: -4vmin;
+    }
+
+}
