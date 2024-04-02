@@ -13,4 +13,4 @@ This project serves as a portfolio website for Oskar Trybała, showcasing his sk
 ## Preview
 You can see a live preview of the website [here](#).
 
-## All rights reserved. Oskar Trybała
+### All rights reserved. Oskar Trybała
