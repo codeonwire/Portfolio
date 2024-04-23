@@ -10,6 +10,8 @@
     padding: 0;
 
     box-sizing: border-box;
+
+    transition: .2s ease-in;
 }
 
 html {
@@ -32,6 +34,21 @@ body{
     margin: auto;
 }
 
+.footer{
+    background-color: #0f0900;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    font-family: "Roboto", sans-serif;
+    font-size: 2vmin;
+    padding: 2vmin;
+    left: 0;
+
+    z-index: 100;
+    position: absolute;
+}
+
 .baner{
     display: flex;
     align-items: center;
@@ -39,13 +56,21 @@ body{
     top: 0;
     left: 0;
     clear: both;
-    z-index: 100;
     background-color: #fff;
-    width: 100.1%;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+
+    animation-name: upDown;
+    animation-duration: 1.5s;
 }
 
 .baner img{
     width: 15vmin;
+    margin-left: 10vmin;
+
+    animation-name: leftSvg;
+    animation-duration: 3s;
 }
 
 .baner .githubIcon{
@@ -59,22 +84,26 @@ body{
     gap: 4vmin;
     margin-right: 10vmin;
     padding: 3vmin;
-    position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    position: absolute;
 }
 
 .nav a{
     text-decoration: none;
-    color: grey;
+    color: rgb(156, 156, 156);
     background-color: #ffffff;
     border: solid .5vmin #fff;
     border-radius: 5vmin;
     padding: 2vmin 3vmin;
     transition: .75s ease;
-    font-size: 1.75vmin;
+    font-size: 1.5vmin;
     font-family: "Roboto", sans-serif;
     white-space: nowrap;
+    text-transform: uppercase;
+    font-weight:500;
+    letter-spacing: .05vmin;
+    
 }
 
 .nav .c{
@@ -99,49 +128,137 @@ body{
     border: .5vmin solid #fff;
 }
 
-.flexMain{
-    display: flex;
-    gap: 30vmin;
-}
-
 .main{
-    margin-top: 5vmin;
-    padding: 3vmin;
-    text-align: left;
+    background-color: #ebeaea;
+    padding: 25vmin;
+    text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 40%;
-    left: 25%;
-    transform: translate(-25%);
+    width: 100%;
+    /* left: 50%;
+    transform: translate(-50%); */
     position: relative;
+
+    animation-name: upDown;
+    animation-duration: 1s;
+    z-index: 5;
 }
 
-.main h1{
+.main2{
+    padding: 8vmin;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    color: #fff;
+    position: relative;
+
+    animation-name: upDown;
+    animation-duration: 1.25s;
+
+    background-image: url(programmingImage.jpg);
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 4;
+}
+
+.main3{
+    background-color: #fff;
+    padding: 8vmin;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    color: #000000;
+    position: relative;
+
+    animation-name: upDown;
+    animation-duration: 1.5s;
+
+    z-index: 3;
+}
+
+.main4{
+    background-color: #ebeaea;
+    padding: 8vmin;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    color: #000000;
+    position: relative;
+
+    animation-name: upDown;
+    animation-duration: 2s;
+
+    z-index: 2;
+}
+
+.main4 h2{
+    font-size: 3vmin;
+}
+
+.main4 h3{
+    color: rgb(105, 105, 105);
+    font-size: 2.25vmin;
+}
+
+.main4 h3 a{
+    color: rgb(105, 105, 105);
+}
+
+.main3 h2{
     margin-top: 1vmin;
-    font-size: 3vmax;
+    font-size: 3vmin;
     font-family: "Roboto", sans-serif;
 }
 
-.main h3{
+.main3 h3{
     color: grey;
     font-family: "Rubik", sans-serif;
+    text-align: center;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    font-size: 2vmin;
+}
+
+.main3 .h{
+    font-size: 3vmin;
+    color: rgb(0, 0, 0);
+}
+
+.main2 h3{
+    width: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    font-size: 2vmin;
+}
+
+.main2 h3 a{
+    color: #fff;
+}
+
+.main h1{
+    margin-top: 3vmin;
+    font-size: 2vmin;
+    font-family: "Roboto", sans-serif;
+}
+
+.main h2{
+    font-size: 5vmin;
 }
 
 .main .h3{
-    font-size: 1.75vmin;
-    width: 74%;
+    color: grey;
+    font-family: "Rubik", sans-serif;
+    font-size: 2vmin;
 }
 
 .main .h{
     color: rgb(105, 105, 105);
-    margin-left: 3vmin;
-    position: absolute;
-}
-
-.main .h hr{
-    position: absolute;
-    margin-left: -2.5vmin;
-    margin-top: 1vmin;
-    width: 20%;
 }
 
 .contactBtn{
@@ -150,7 +267,7 @@ body{
     background-color: #4d2e00;
     padding: 2vmin 4vmin;
     border: none;
-    border-radius: 2vmin;
+    border-radius: 1.5vmin;
     font-size: 2vmin;
     transition: .2s ease-in;
 }
@@ -160,40 +277,40 @@ body{
     background-color: #362100;
 }
 
+.svgs1{
+    margin-top: -160vmin;
+}
+
 .svgs2{
-    margin-top: 99.95vmin;
+    margin-top: 99.9vmin;
 }
 
 .svg1{
     rotate: 90deg;
     width: 100vmin;
-    margin-top: -15vmin;
     position: absolute;
-    z-index: -1;
+    z-index: 10;
 }
 
 .svg2{
     rotate: -90deg;
     width: 100vmin;
-    margin-top: -15vmin;
     position: absolute;
-    z-index: -1;
+    z-index: 10;
 }
 
 .svg1M{
     rotate: 90deg;
     width: 100vmin;
-    margin-top: -15vmin;
     position: absolute;
-    z-index: -2;    
+    z-index: 9;    
 }
 
 .svg2M{
     rotate: -90deg;
     width: 100vmin;
-    margin-top: -15vmin;
     position: absolute;
-    z-index: -2;
+    z-index: 9;
 }
 
 .svgs1 .svg1{
@@ -245,37 +362,102 @@ body{
     transform: scaleY(-1);
 }
 
-@media screen and (max-width: 520px) {
+.svgs1 .svg1,.svgs1 .svg1M,.svgs2 .svg2,.svgs2 .svg2M{
+    animation-name: leftSvg;
+    animation-duration: 1.5s;
+}
+
+.svgs1 .svg2,.svgs1 .svg2M,.svgs2 .svg1,.svgs2 .svg1M{
+    animation-name: rightSvg;
+    animation-duration: 1.5s;
+}
+
+@keyframes rightSvg {
+    from {right: -20vmin;}
+    to 100% {right: 0;}
+}
+
+@keyframes leftSvg {
+    from {left: -20vmin;}
+    to 100% {left: 0;}
+}
+
+@keyframes upDown {
+    from {margin-top: -20vmin;}
+    to 100% {margin-top: 0;}
+}
+
+@keyframes upDown2 {
+    from {margin-top: -30vmin;}
+    to 100% {margin-top: 0;}
+}
+
+@keyframes upDown3 {
+    from {margin-top: -40vmin;}
+    to 100% {margin-top: 0;}
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .baner img{
+        margin-left: 5vmin;
+    }
+
+    .mobileNone{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .baner img{
+        margin-left: 0;
+    }
+    .githubIcon{
+        width: 20vmax;
+    }
+}
+
+@media screen and (max-width: 550px) {
     .nav{
         gap: 0;
     }
 
     .nav a{
         padding: 2vmin 3vmin;
+        font-size: 2vmin;
+    }
+
+    .main2 h1, .main3 h1, .main4 h1{
+        font-size: 5vmin;
+    }
+
+    .main2 h3, .main3 h3, .main4 h3{
+        width: 100%;
+        text-align: left;
+        font-size: 4vmin;
+    }
+
+    .main .h3{
+        font-size: 3vmin;
+    }
+
+    .svgs1{
+        margin-top: -180vmin;
+    }
+    
+    .contactBtn{
+        font-size: 3vmin;
+        padding: 3vmin 6vmin;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .nav a{
         font-size: 2.5vmin;
     }
 
-
-    .flexMain{
-        flex-direction: row;
-        justify-content: center;
-        text-align: center !important;
+    .svgs1{
+        margin-top: -240vmin;
     }
-    .main{
-        margin-top: 5vmin;
-        padding: 3vmin;
-        text-align: left;
-        width: 60%;
-        left: 0;
-        transform: translate(0%);
-    }
-
-    .main .h{
-        margin-left: 5vmin;
-    }
-    
-    .main .h hr{
-        margin-left: -4vmin;
-    }
-
 }
