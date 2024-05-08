@@ -9,6 +9,7 @@ This project serves as a portfolio website for Oskar Trybała, showcasing his sk
 - HTML
 - CSS
 - JavaScript
+- Tailwindcss
 
 ## Preview
 You can see a live preview of the website [here](#).
