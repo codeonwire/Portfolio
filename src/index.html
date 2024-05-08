@@ -4,73 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oskar Trybala | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
     <link rel="stylesheet" href="output.css">
     <script src="https://kit.fontawesome.com/ff87723d07.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-sans">
     <div class="bg-zinc-900 text-white font-bold flex justify-center w-full h-screen text-center opacity-100 z-10 header fixed">
         <div class="bg-no-repeat bg-cover absolute w-full h-screen blur-sm brightness-75 duration-700 bg-fixed bg-[url('img/homeBg.png')] top-0"></div>
-        <img src="img/logo.png" class="w-28 h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 absolute top-1/3 lg:top-52">
-        <a href="index.html" class="absolute top-28 md:top-56 font-extrabold tracking-wide text-3xl md:text-3xl lg:text-4xl lg:top-1/3 lg:mt-20">OSKAR <i class="text-green-700">TRYBALA</i></a>
+        <a href="index.html"><img src="img/logo.png" class="w-28 h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 absolute left-1/2 -translate-x-1/2 top-1/3 lg:top-52 rounded-3xl hover:border-8 hover:pointer border-transparent"></a>
+        <p class="absolute top-28 md:top-56 font-extrabold tracking-wide text-3xl md:text-3xl lg:text-5xl lg:top-96">OSKAR <i class="text-green-700">TRYBAŁA</i></p>
         <p class="absolute top-1/4 font-extrabold tracking-wide text-base max-sm:text-xs lg:top-1/3 lg:mt-36"><i class="fa-solid fa-grip-lines-vertical"></i> Junior programmer with great skills <i class="fa-solid fa-grip-lines-vertical"></i></p>
-        <div class="nav flex items-center text-2xl uppercase justify-center absolute top-1/2 lg:top-1/2 lg:mt-20 flex-col lg:flex-row gap-2">
-            <a href="#about" class="px-5 border-transparent hover:border-green-700 border-4 p-2 m-2 rounded-2xl duration-500 shadow-white lg:opacity-75 hover:shadow-2xl hover:opacity-100 text-3xl max-sm:text-2xl">About</a>
+        <div class="nav flex items-center text-2xl uppercase justify-center absolute top-1/2 lg:top-1/2 lg:mt-20 flex-col lg:flex-row gap-2 max-sm:pt-5">
+            <a href="#about" class="bg-fixed bg-no-repeat bg-cover max-sm:bg-[url('img/homeBg.png')] px-5 border-transparent hover:border-white max-sm:border-white border-4 p-2 m-2 rounded-2xl duration-500 shadow-white lg:opacity-75 hover:shadow-2xl hover:opacity-100 text-3xl max-sm:text-2xl">About</a>
             <i class="fa-solid fa-circle text-xs text-green-700"></i>
-            <a href="#skills" class="px-5 border-transparent hover:border-green-700 border-4 p-2 m-2 rounded-2xl duration-500 shadow-white lg:opacity-75 hover:shadow-2xl hover:opacity-100 text-3xl max-sm:text-2xl">Skills</a>
+            <a href="#skills" class="bg-fixed bg-no-repeat bg-cover max-sm:bg-[url('img/homeBg.png')] px-5 border-transparent hover:border-white max-sm:border-white border-4 p-2 m-2 rounded-2xl duration-500 shadow-white lg:opacity-75 hover:shadow-2xl hover:opacity-100 text-3xl max-sm:text-2xl">Skills</a>
             <i class="fa-solid fa-circle text-xs text-green-700"></i>
-            <a href="#games" class="px-5 border-transparent hover:border-green-700 border-4 p-2 m-2 rounded-2xl duration-500 shadow-white lg:opacity-75 hover:shadow-2xl hover:opacity-100 text-3xl max-sm:text-2xl">Games</a>
+            <a href="#games" class="bg-fixed bg-no-repeat bg-cover max-sm:bg-[url('img/homeBg.png')] px-5 border-transparent hover:border-white max-sm:border-white border-4 p-2 m-2 rounded-2xl duration-500 shadow-white lg:opacity-75 hover:shadow-2xl hover:opacity-100 text-3xl max-sm:text-2xl">Games</a>
         </div>
-        <a href="https://github.com/aestheticoq" target="_blank"><i class="githubBtn fa-brands fa-github absolute text-2xl max-sm:text-xl right-0 top-0 mr-5 mt-3 border-transparent border-2 rounded-full p-2 duration-500 hover:border-green-600"></i></a>
-        <a href="#contact"><i class="text-green-700 fa-solid fa-address-book mt-5 ml-6 absolute top-0 left-0 font-light font-mono text-2xl max-sm:text-xl"></i></a>
-        <a href="#contact" class="mt-4 ml-16 absolute top-0 left-0 font-light font-mono text-2xl max-sm:text-xl before:content-[''] before:bg-green-600 before:h-0.5 before:w-0 hover:before:w-full before:duration-500 before:mt-8 before:absolute">Contact me</a>
+        <a href="https://github.com/aestheticoq" target="_blank" class="bg-black text-white rounded-full hover:duration-500 hover:rounded-sm hover:bg-white hover:text-black duration-700 absolute right-0 top-0 mr-5 mt-3"><i class="githubBtn fa-brands fa-github text-2xl max-sm:text-xl border-transparent border-2 rounded-full p-2"></i></a>
+        <div class="group">
+            <a href="#contact"><i class="text-green-700 fa-solid fa-address-book mt-5 ml-6 absolute top-0 left-0 font-light font-mono text-2xl max-sm:text-xl"></i></a>
+            <a href="#contact" class="mt-4 ml-16 absolute top-0 left-0 font-light font-mono text-2xl max-sm:text-xl before:content-[''] before:bg-white before:h-0.5 before:w-0 group-hover:before:w-full before:duration-500 before:mt-8 before:absolute">Contact me</a>
+        </div>
     </div>
     <div class="main absolute" style="top: 100%;">
-        <div class="text-black text-5xl w-full z-20 relative bg-green-900 about" id="about">
+        <div class="text-black text-5xl w-full z-20 relative bg-white bg-no-repeat bg-cover bg-fixed about min-h-screen" id="about">
             <br>
-            <h1 class="py-10 font-bold font-serif text-center tracking-wider text-white">ABOUT</h1>
+            <h1 class="py-10 font-bold font-serif text-center tracking-wider">About</h1>
     
-            <div class="flex justify-center items-center lg:justify-around flex-col pt-10 pb-20 gap-2 lg:gap-0">
-                <div class="max-sm:w-2/3 max-sm:max-h-96 max-sm:pt-10 md:w-3/4 lg:w-1/3 lg:h-96 px-10 pt-20 pb-52 rounded-2xl md:ml-10 md:pb-52 lg:pb-96 mx-4 bg-gray-50 duration-300 border-black border-4 rotate-3 md:rotate-6" style="z-index: 1;
-                -webkit-box-shadow: inset 0px 0px 20px 18px rgba(0, 56, 12, 0.2);
-                -moz-box-shadow: inset 0px 0px 20px 18px rgba(0, 56, 12, 0.2);
-                box-shadow: inset 0px 0px 20px 18px rgba(0, 56, 12, 0.2);">
-    
-                    <h2 class="uppercase font-mono font-bold tracking-tighter text-2xl md:text-3xl lg:text-4xl">I am Oskar Trybala</h2>
-                    <h3 class="max-sm:text-sm text-base lg:text-lg font-medium pt-10">Ambitious programming enthusiast addicted to become better every day.
+            <div class="flex justify-center items-center lg:justify-around flex-col lg:flex-row pt-10 pb-20 gap-0">
+                <div class="overflow-hidden max-sm:w-2/3 max-sm:max-h-96 max-sm:pt-10 md:w-3/4 lg:w-1/3 lg:h-96 px-10 pt-20 pb-52 rounded-2xl md:ml-10 md:pb-52 lg:pb-96 mx-4
+                bg-gray-50 duration-500 border-4 rotate-3 md:rotate-6 before:content-[''] before:absolute before:bg-black border-green-900 lg:border-green-900 before:w-full before:h-full before:top-0 before:left-0 before:border-4 before:rounded-2xl hover:before:opacity-0 before:duration-500 before:opacity-0 lg:before:opacity-100 hover:cursor-pointer hover:before:invisible before:hover:rounded-3xl before:hover:w-0 before:hover:h-0 before:hover:left-1/2 before:hover:top-1/2" style="
+                -webkit-box-shadow: inset 0px 0px 20px 18px rgba(56, 56, 56, 0.2);
+                -moz-box-shadow: inset 0px 0px 20px 18px rgba(56, 56, 56, 0.2);
+                box-shadow: inset 0px 0px 20px 18px rgba(56, 56, 56, 0.2);">
+                    <i class="fa-regular fa-address-card overflow-hidden"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="overflow-hidden absolute w-full h-full left-1/2 top-0 -translate-x-1/2 bg-transparent bg-white rounded-2xl bg-fixed hover:opacity-0 duration-500 p-16 md:p-32 lg:p-40 z-50 hover:z-0"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 80c8.8 0 16 7.2 16 16V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V96c0-8.8 7.2-16 16-16H512zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM208 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H304c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H176zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H376z"/></svg>
+                    <h2 class="overflow-hidden uppercase font-mono font-bold tracking-tighter text-2xl md:text-3xl lg:text-4xl">I am Oskar Trybała</h2>
+                    <h3 class="overflow-hidden max-sm:text-sm text-base lg:text-lg font-medium pt-10">Ambitious programming enthusiast addicted to become better every day.
                         I'm only 16 years old but I can do a lot and at a lower price.
                     </h3>
                 </div>
-                <div class="max-sm:w-2/3 max-sm:max-h-96 max-sm:pt-10 md:w-3/4 lg:w-1/3 lg:h-96 px-10 pt-20 pb-52 rounded-2xl lg:pb-96 mx-4 bg-gray-50 duration-300 border-black border-4 -rotate-3 md:-rotate-6" style="z-index: 3;
-                -webkit-box-shadow: inset 0px 0px 20px 18px rgba(0, 56, 12, 0.2);
-                -moz-box-shadow: inset 0px 0px 20px 18px rgba(0, 56, 12, 0.2);
-                box-shadow: inset 0px 0px 20px 18px rgba(0, 56, 12, 0.2);">
-    
-                    <h2 class="uppercase font-mono font-bold tracking-tighter text-2xl md:text-3xl lg:text-4xl">My github</h2>
-                    <h3 class="max-sm:text-sm text-base lg:text-lg font-medium pt-10">You can check my all project on github click <a href="https://github.com/aestheticoq" target="_blank">here <i class="fa-brands fa-github"></i></a></h3>
+                <div class="overflow-hidden max-sm:w-2/3 max-sm:max-h-96 max-sm:pt-10 md:w-3/4 lg:w-1/3 lg:h-96 px-10 pt-20 pb-52 rounded-2xl lg:pb-96 mx-4
+                bg-gray-50 duration-500 border-4 -rotate-3 md:-rotate-6 before:content-[''] before:absolute before:bg-black border-green-900 lg:border-green-900 before:w-full before:h-full before:top-0 before:left-0 before:border-4 before:rounded-2xl hover:before:opacity-0 before:duration-500 before:opacity-0 lg:before:opacity-100 hover:cursor-pointer hover:before:invisible before:hover:rounded-3xl before:hover:w-0 before:hover:h-0 before:hover:left-1/2 before:hover:top-1/2" style="
+                -webkit-box-shadow: inset 0px 0px 20px 18px rgba(56, 56, 56, 0.2);
+                -moz-box-shadow: inset 0px 0px 20px 18px rgba(56, 56, 56, 0.2);
+                box-shadow: inset 0px 0px 20px 18px rgba(56, 56, 56, 0.2);">    
+                    <i class="fa-brands fa-github-alt overflow-hidden"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512" class="overflow-hidden absolute w-full h-full left-1/2 top-0 -translate-x-1/2 bg-transparent bg-white rounded-2xl bg-fixed hover:opacity-0 duration-500 p-16 md:p-32 lg:p-40 z-50 hover:z-0"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+                    <h2 class="overflow-hidden uppercase font-mono font-bold tracking-tighter text-2xl md:text-3xl lg:text-4xl">My github</h2>
+                    <h3 class="overflow-hidden max-sm:text-sm text-base lg:text-lg font-medium pt-10">You can check my all project on github click <a href="https://github.com/aestheticoq" target="_blank" class="border-2 p-2 border-gray-300 hover:bg-black hover:text-white hover:border-black duration-300 max-sm:top-1/3 absolute hover:z-50">here <i class="fa-brands fa-github"></i></a></h3>
                 </div>
-                <div class="max-sm:w-2/3 max-sm:max-h-96 max-sm:pt-10 md:w-3/4 lg:w-1/3 lg:h-96 px-10 pt-20 pb-52 rounded-2xl md:mr-10 md:pb-52 lg:pb-96 mx-4 bg-gray-50 duration-300 border-black border-4 rotate-3 md:rotate-6" style="z-index: 1;
-                -webkit-box-shadow: inset 0px 0px 20px 18px rgba(0, 56, 12, 0.2);
-                -moz-box-shadow: inset 0px 0px 20px 18px rgba(0, 56, 12, 0.2);
-                box-shadow: inset 0px 0px 20px 18px rgba(0, 56, 12, 0.2);">
-    
-                    <h2 class="uppercase font-mono font-bold tracking-tighter text-2xl md:text-3xl lg:text-4xl">My journey</h2>
-                    <h3 class="max-sm:text-sm text-base lg:text-lg font-medium pt-10">I have been passionate about programming for 6 years. One day, when I was 10 years old, I said: I will be a programmer someday.
+                <div class="overflow-hidden bg-fixed max-sm:w-2/3 max-sm:max-h-96 max-sm:pt-10 md:w-3/4 lg:w-1/3 lg:h-96 px-10 pt-20 pb-52 rounded-2xl md:mr-10 md:pb-52 lg:pb-96 mx-4
+                bg-gray-50 duration-500 border-4 rotate-3 md:rotate-6 before:content-[''] before:absolute before:bg-black border-green-900 lg:border-green-900 before:w-full before:h-full before:top-0 before:left-0 before:border-4 before:rounded-2xl hover:before:opacity-0 before:duration-500 before:opacity-0 lg:before:opacity-100 hover:cursor-pointer hover:before:invisible before:hover:rounded-3xl before:hover:w-0 before:hover:h-0 before:hover:left-1/2 before:hover:top-1/2" style="
+                -webkit-box-shadow: inset 0px 0px 20px 18px rgba(56, 56, 56, 0.2);
+                -moz-box-shadow: inset 0px 0px 20px 18px rgba(56, 56, 56, 0.2);
+                box-shadow: inset 0px 0px 20px 18px rgba(56, 56, 56, 0.2);">
+                    <i class="fa-brands fa-space-awesome overflow-hidden"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="overflow-hidden absolute w-full h-full left-1/2 top-0 -translate-x-1/2 bg-transparent bg-white rounded-2xl bg-fixed hover:opacity-0 duration-500 p-16 md:p-32 lg:p-40 z-50 hover:z-0"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M96 256H128V512H0V352H32V320H64V288H96V256zM512 352V512H384V256H416V288H448V320H480V352H512zM320 64H352V448H320V416H192V448H160V64H192V32H224V0H288V32H320V64zM288 128H224V192H288V128z"/></svg>
+                    <h2 class="overflow-hidden uppercase font-mono font-bold tracking-tighter text-2xl md:text-3xl lg:text-4xl">My journey</h2>
+                    <h3 class="overflow-hidden max-sm:text-sm text-base lg:text-lg font-medium pt-10">I have been passionate about programming for 6 years. One day, when I was 10 years old, I said: I will be a one of the best programmer someday.
                         Nothing has changed since then and I am still trying to be closer and closer to the set goal.
                     </h3>
                 </div>
             </div>  
             <br>
         </div>
-        <div class="text-black text-5xl w-full relative z-30 bg-white skills" id="skills">
+        <div class="text-white text-5xl w-full relative z-30 bg-green-900 skills min-h-screen" id="skills">
             <br>
-            <h1 class="py-10 font-bold font-serif text-center tracking-wider text-black">SKILLS</h1>
-    
+            <h1 class="py-10 font-bold font-serif text-center tracking-wider text-white">Skills</h1>
+            <marquee behavior="scroll" direction="left" scrollamount="12" loop="infinite">
+                <h3 class="font-normal tracking-wide w-full h-auto py-5">I can do a lot in: html, css, javascript, unity, c#. Frameworks i know: tailwindcss. I am currently learning: Typescript, better c#, php, sql.</h3>
+            </marquee>
+            <div class="px-20 pt-10 grid grid-rows-3 grid-cols-4 gap-x-32 gap-y-20 text-center grid-flow-row max-sm:gap-10">
+                <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="100rem" height="100rem"/> </a>
+                <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="100rem" height="100rem"/> </a>
+                <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="100rem" height="100rem"/> </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="100rem" height="100rem"/> </a>
+                <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="100rem" height="100rem"/> </a>
+                <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="100rem" height="100rem"/> </a>
+                <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="100rem" height="100rem"/> </a>
+                <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="tailwindcss" width="100rem" height="100rem"/> </a>
+                <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="100rem" height="100rem"/> </a>
+                <a href="https://www.udemy.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/udemy/udemy-icon.svg" alt="udemy" width="100rem" height="100rem"/> </a>
+                <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg" alt="udemy" width="100rem" height="100rem"/> </a>
+            </div>
+            <br>
+        </div>
+        <div class="text-black text-5xl w-full relative z-30 bg-white min-h-screen games" id="games">
+            <br>
+            <h1 class="py-10 font-bold font-serif text-center tracking-wider text-black">Games</h1>
+            <h2 class="lg:text-5xl text-5xl tracking-wider text-wrap font-semibold text-left max-sm:text-2xl md:5xl">I’m currently working on my unity game Dumsidash. <button class="uppercase text-xs dumsidashInfoBtn bg-transparent p-2">Click For More Info !</button></h2>
+            <div class="invisible dumsidashInfo absolute font-mono text-sm z-20 bg-green-700 font-bold text-white p-20 w-5/12 left-1/4 -translate-x-1/2 mt-5 max-sm:w-1/2 max-sm:ml-5 max-sm:mt-10 max-sm:text-xs max-md:w-2/3 max-sm:p-5 md:mt-20">
+                <button class="dumsidashInfoCloseBtn absolute top-0 right-0 mt-2 mr-2 md:mt-8 md:mr-10 text-xl text-red-600">X</button>
+                Dumsidash is a Unity 2D action and strategy game designed for both computer and mobile platforms.
+                In this game, player engage in a creative and dynamic gameplay experience where they dash into dummies to eliminate them within a specified number of dashes.
+                Rooms with various dummies to eliminate are randomly generated, offering a unique challenge.
+            </div>
+            <h3 class="lg:text-5xl text-5xl tracking-wider text-wrap font-thin text-right max-sm:text-2xl md:5xl">I’m looking to collaborate on Future games</h3>
+            <br><br>
+            <div class="grid text-sm grid-rows-4 grid-cols-4 gap-1 absolute left-1/2 -translate-x-1/2 text-center">
+                <img src="img/dumsidashArts/gameImage1.jpg" alt="Game Image" class="w-11/12 h-auto">
+                <img src="img/dumsidashArts/gameImage2.jpg" alt="Game Image" class="w-11/12 h-auto">
+                <img src="img/dumsidashArts/gameImage3.jpg" alt="Game Image" class="w-11/12 h-auto">
+                <img src="img/dumsidashArts/gameImage4.jpg" alt="Game Image" class="w-11/12 h-auto">
+                <img src="img/dumsidashArts/gameImage5.jpg" alt="Game Image" class="w-11/12 h-auto">
+                <img src="img/dumsidashArts/gameImage6.jpg" alt="Game Image" class="w-11/12 h-auto">
+                <img src="img/dumsidashArts/gameImage7.jpg" alt="Game Image" class="w-11/12 h-auto">
+                <img src="img/dumsidashArts/gameImage8.jpg" alt="Game Image" class="w-11/12 h-auto">
+            </div>
+        </div>
+        <div class="text-white text-5xl w-full relative z-30 bg-green-900 min-h-screen contact" id="contact">
+            <br>
+            <h1 class="py-10 font-bold font-serif text-center tracking-wider text-white">Contact</h1>
             <br>
         </div>
     </div>
     
-    <div class="footer text-center absolute bottom-0 w-full text-white font-bold p-4">
+    <div class="footer absolute top-1/2 bg-green-800 right-0 left-1/3 text-white font-bold p-4 z-10 rotate-90 text-center w-full ml-5 md:ml-10 max-sm:text-xs md:text-xl">
         © Copyright 2024 Oskar Trybała | All rights reserved
     </div>
 
