@@ -5,4 +5,13 @@
 *::selection {
     color:white;
     background: black;
-  }
+}
+
+@media (max-width: 1275px){
+    .skills div a{
+        width: 70%;
+    }
+    .skills div a:hover{
+        width: 140%;
+    }
+}
